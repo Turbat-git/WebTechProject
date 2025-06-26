@@ -19,58 +19,32 @@
         <a href="contact.html">Contact me </a>
     </nav>
 </header>
-<main class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
-    <article class="border border-gray-500 flex flex-col gap-4 p-4">
-        <header class="bg-gray-800 text-gray-200 p-4 -m-4 mb-0">
-            <h4 class="text-bold text-xl">Steam Deal</h4>
-        </header>
-        <main class="flex flex-col gap-4">
-            <article>This project was done when I was studying mobile development at TAFE.</article>
-            <article>The app allows the users to see top 10 deals from the CheapShark API everyday.</article>
-            <a href="https://github.com/Turbat-git/SteamDeal">Click here</a>
-        </main>
-    </article>
-    <article class="border border-gray-500 flex flex-col gap-4 p-4">
-        <header class="bg-gray-800 text-gray-200 p-4 -m-4 mb-0">
-            <h4 class="text-bold text-xl">Card Header</h4>
-        </header>
-        <main class="flex flex-col gap-4">
-            <article>This card contains text only, no image, just a plain simple text card.</article>
-            <article>It also omits header and footer areas.</article>
-            <article>It is 1/4 of the parent container width.</article>
-        </main>
-    </article>
-    <article class="border border-gray-500 flex flex-col gap-4 p-4">
-        <header class="bg-gray-800 text-gray-200 p-4 -m-4 mb-0">
-            <h4 class="text-bold text-xl">Card Header</h4>
-        </header>
-        <main class="flex flex-col gap-4">
-            <article>This card contains text only, no image, just a plain simple text card.</article>
-            <article>It also omits header and footer areas.</article>
-            <article>It is 1/4 of the parent container width.</article>
-        </main>
-    </article>
-    <article class="border border-gray-500 flex flex-col gap-4 p-4">
-        <header class="bg-gray-800 text-gray-200 p-4 -m-4 mb-0">
-            <h4 class="text-bold text-xl">Card Header</h4>
-        </header>
-        <main class="flex flex-col gap-4">
-            <article>This card contains text only, no image, just a plain simple text card.</article>
-            <article>It also omits header and footer areas.</article>
-            <article>It is 1/4 of the parent container width.</article>
-        </main>
-    </article>
-    <article class="border border-gray-500 flex flex-col gap-4 p-4">
-        <header class="bg-gray-800 text-gray-200 p-4 -m-4 mb-0">
-            <h4 class="text-bold text-xl">Card Header</h4>
-        </header>
-        <main class="flex flex-col gap-4">
-            <article>This card contains text only, no image, just a plain simple text card.</article>
-            <article>It also omits header and footer areas.</article>
-            <article>It is 1/4 of the parent container width.</article>
-        </main>
-    </article>
-</main>
+<main class="flex flex-col items-center justify-start p-6 gap-6">
+    <h1 class="text-3xl font-semibold">My Resume!</h1>
 
+    <iframe src="./assets/docs/Turbat_Resume.pdf"
+            class="w-full max-w-6xl custom-iframe-height border rounded shadow"
+            type="application/pdf">
+        This browser does not support PDFs. Please download the file below.
+    </iframe>
+
+    <a href="./assets/docs/Turbat_Resume.pdf" class="bg-sky-500 hover:bg-sky-600 text-white font-semibold py-2
+    px-6 rounded-full transition duration-300">
+        Download
+    </a>
+</main>
+<footer class="text-gray-400 bg-gray-800 body-font
+    w-full flex flex-col items-start justify-between p-6
+            mx-auto md:flex-row gap-2">
+    <a class="flex items-center mb-4 title-font md:mb-0 gap-2
+                  hover:text-white transition duration-500 ease-in-out">
+        <h1 class="text-sm">Turbat's Portfolio</h1>
+    </a>
+    <main class="flex flex-wrap text-sm pl-6 ml-6 border-l border-gray-400 grow ">
+        <article class="m-auto">
+            © Copyright 2025 Turbat Turkhuu, all rights reserved.
+        </article>
+    </main>
+</footer>
 </body>
 </html>

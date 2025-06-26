@@ -432,6 +432,10 @@ summary {
 Removes the default spacing and border for appropriate elements.
 */
 
+.custom-iframe-height {
+  height: 50vh;
+}
+
 blockquote,
 dl,
 dd,
