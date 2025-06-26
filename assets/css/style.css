@@ -1,0 +1,194 @@
+@import '../CSS-Resets/modern-normalize.css';
+@font-face {
+    font-family: "WebFont";
+    src: url("../fonts/webfonts/fa-brands-400.ttf");
+}
+
+.text {
+    font-family: "WebFont", sans-serif;
+}
+
+/**General*/
+header, footer {
+    background-color: gray;
+    text-align: center;
+    border: solid 0.1em black;
+    padding: 1rem 1rem;
+}
+
+main, aside {
+    background-color: gray;
+    padding: 1rem;
+    border: solid 0.1em black;
+}
+
+nav{
+    background-color: gray;
+    width: 100%;
+    border: solid 0.1em black;
+    padding: 1rem 1rem;
+}
+
+/**Articles*/
+.articles{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+}
+
+article {
+    background-color: gray;
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+/**Mobile*/
+@media screen and (min-width: 290px) {
+    nav{
+        display: none;
+    }
+    aside{
+        display: none;
+    }
+    .text{
+        font-size: 16px;
+    }
+    h2{
+        padding-top: 1rem;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    .articles{
+        grid-template-columns: 1fr;
+    }
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+    }
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    .hamburger-icon {
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        font-size: 1.5rem;
+        z-index: 1000;
+    }
+    form#apiForm {
+        background-color: #fff;
+        padding: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        max-width: 100%;
+        margin-top: 1rem;
+    }
+    .checkbox-group {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+    }
+    .input-group{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .input-group input[type="text"] {
+        padding: 0.5rem;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    .input-group button {
+        padding: 0.6rem;
+        font-size: 1rem;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    .input-group button:hover {
+        background-color: #45a049;
+    }
+}
+
+/** Desktop*/
+@media screen and (min-width: 1200px) {
+    .content-wrapper {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-top: 5.5em;
+        padding-bottom: 6em;
+    }
+    i.hamburger-icon.fa {
+        display: none;
+    }
+
+    .text{
+        font-size: 20px;
+    }
+    aside{
+        display: flex;
+        flex-direction: column;
+    }
+    section{
+        background-color: gray;
+        text-align: left;
+        padding-top: 1em;
+    }
+    h2{
+        font-size: 1em;
+        font-weight: normal;
+        background-color: gray;
+        text-align: left;
+    }
+    header {
+        position: fixed;
+        z-index: 1;
+        height: 3em;
+        width: 100%;
+    }
+    nav{
+        display: flex;
+        position: fixed;
+        z-index: 0;
+        height: 3em;
+        width: 100%;
+        top: 2.8em;
+    }
+    footer {
+        position: fixed;
+        z-index: 1;
+        height: 5.5em;
+        width: 100%;
+    }
+    main{
+        width: 100%;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1em;
+        column-gap: 1rem;
+    }
+    article {
+        display: flex;
+        flex-direction: column;
+    }
+    .section-container {
+        max-width: 1200px;
+    }
+}
+
