@@ -7,72 +7,73 @@
 </head>
 <body>
 <header class="sticky top-0 flex flex-col justify-between p-6 mx-auto md:flex-row gap-2 bg-gray-800 text-gray-200">
-  <a class="flex items-center mb-4 title-font md:mb-0 gap-2">
+  <div class="flex items-center mb-4 title-font md:mb-0 gap-2">
     <h1 class="text-sm">Turbat's Portfolio</h1>
-  </a>
-  <nav class="gap-x-4 flex text-base md:ml-auto border border-dashed">
-    <a href="index.html">Home </a>
-    <a href="projects.html">Projects </a>
-    <a href="resume.html">Resume </a>
-    <a href="about.html">About me </a>
-    <a href="sample.html">Sample Project </a>
-    <a href="contact.html">Contact me </a>
+  </div>
+  <nav class="gap-x-4 flex text-base md:ml-auto border border-dashed" aria-label="Main Navigation">
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="resume.html">Resume</a>
+    <a href="about.html">About me</a>
+    <a href="sample.html">Sample Project</a>
+    <a href="contact.html">Contact me</a>
   </nav>
 </header>
+
 <main class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
-  <article class="border border-gray-500 flex flex-col gap-4 p-4">
-    <header class="bg-gray-800 text-gray-200 p-4 -m-4 mb-0">
-      <h4 class="text-bold text-xl">Projects</h4>
-    </header>
-    <main class="flex flex-col gap-4">
-      <article>This page will contain all the github repos links to my current and past projects</article>
-    </main>
-  </article>
-  <article class="border border-gray-500 flex flex-col gap-4 p-4">
-    <header class="bg-gray-800 text-gray-200 p-4 -m-4 mb-0">
-      <h4 class="text-bold text-xl">Resume</h4>
-    </header>
-    <main class="flex flex-col gap-4">
-      <article>This page is for my resume and will allow you to download it!</article>
-    </main>
-  </article>
-  <article class="border border-gray-500 flex flex-col gap-4 p-4">
-    <header class="bg-gray-800 text-gray-200 p-4 -m-4 mb-0">
-      <h4 class="text-bold text-xl">About Me</h4>
-    </header>
-    <main class="flex flex-col gap-4">
-      <article>This page will have a short introduction about me!.</article>
-    </main>
-  </article>
-  <article class="border border-gray-500 flex flex-col gap-4 p-4">
-    <header class="bg-gray-800 text-gray-200 p-4 -m-4 mb-0">
-      <h4 class="text-bold text-xl">Sample Project</h4>
-    </header>
-    <main class="flex flex-col gap-4">
-      <article>This page contains the project that I did for my WebTech class, and it uses the NinjaAPI</article>
-    </main>
-  </article>
-  <article class="border border-gray-500 flex flex-col gap-4 p-4">
-    <header class="bg-gray-800 text-gray-200 p-4 -m-4 mb-0">
-      <h4 class="text-bold text-xl">Contact Me</h4>
-    </header>
-    <main class="flex flex-col gap-4">
-      <article>This page will allow you to send an email to my email address directly!</article>
-    </main>
-  </article>
-</main>
-<footer class="text-gray-400 bg-gray-800 body-font
-    w-full flex flex-col items-start justify-between p-6
-            mx-auto md:flex-row gap-2">
-  <a class="flex items-center mb-4 title-font md:mb-0 gap-2
-                  hover:text-white transition duration-500 ease-in-out">
-    <h1 class="text-sm">Turbat's Portfolio</h1>
-  </a>
-  <main class="flex flex-wrap text-sm pl-6 ml-6 border-l border-gray-400 grow ">
-    <article class="m-auto">
-      © Copyright 2025 Turbat Turkhuu, all rights reserved.
+  <section>
+    <article class="border border-gray-500 flex flex-col gap-4 p-4">
+      <header class="bg-gray-800 text-gray-200 p-4 -m-4 mb-0">
+        <h2 class="text-bold text-xl">Projects</h2>
+      </header>
+      <p>This page will contain all the GitHub repo links to my current and past projects.</p>
     </article>
-  </main>
+  </section>
+
+  <section>
+    <article class="border border-gray-500 flex flex-col gap-4 p-4">
+      <header class="bg-gray-800 text-gray-200 p-4 -m-4 mb-0">
+        <h2 class="text-bold text-xl">Resume</h2>
+      </header>
+      <p>This page is for my resume and will allow you to download it!</p>
+    </article>
+  </section>
+
+  <section>
+    <article class="border border-gray-500 flex flex-col gap-4 p-4">
+      <header class="bg-gray-800 text-gray-200 p-4 -m-4 mb-0">
+        <h2 class="text-bold text-xl">About Me</h2>
+      </header>
+      <p>This page will have a short introduction about me!</p>
+    </article>
+  </section>
+
+  <section>
+    <article class="border border-gray-500 flex flex-col gap-4 p-4">
+      <header class="bg-gray-800 text-gray-200 p-4 -m-4 mb-0">
+        <h2 class="text-bold text-xl">Sample Project</h2>
+      </header>
+      <p>This page contains the project that I did for my WebTech class, and it uses the NinjaAPI.</p>
+    </article>
+  </section>
+
+  <section>
+    <article class="border border-gray-500 flex flex-col gap-4 p-4">
+      <header class="bg-gray-800 text-gray-200 p-4 -m-4 mb-0">
+        <h2 class="text-bold text-xl">Contact Me</h2>
+      </header>
+      <p>This page will allow you to send an email to my email address directly!</p>
+    </article>
+  </section>
+</main>
+
+<footer class="text-gray-400 bg-gray-800 body-font w-full flex flex-col items-start justify-between p-6 mx-auto md:flex-row gap-2">
+  <div class="flex items-center mb-4 title-font md:mb-0 gap-2 hover:text-white transition duration-500 ease-in-out">
+    <h2 class="text-sm">Turbat's Portfolio</h2>
+  </div>
+  <section class="flex flex-wrap text-sm pl-6 ml-6 border-l border-gray-400 grow">
+    <p class="m-auto">© Copyright 2025 Turbat Turkhuu, all rights reserved.</p>
+  </section>
 </footer>
 </body>
 </html>
