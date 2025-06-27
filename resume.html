@@ -1,46 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Resume</title>
-    <link rel="stylesheet" href="./assets/css/site.css">
+    <link rel="stylesheet" href="./assets/css/site.css" />
 </head>
 <body>
+
 <header class="sticky top-0 flex flex-col justify-between p-6 mx-auto md:flex-row gap-2 bg-gray-800 text-gray-200">
-    <a class="flex items-center mb-4 title-font md:mb-0 gap-2">
+    <div class="flex items-center mb-4 title-font md:mb-0 gap-2">
         <h1 class="text-sm">Turbat's Portfolio</h1>
-    </a>
-    <nav class="gap-x-4 flex text-base md:ml-auto border border-dashed">
-        <a href="index.html">Home </a>
-        <a href="projects.html">Projects </a>
-        <a href="resume.html">Resume </a>
-        <a href="about.html">About me </a>
-        <a href="sample.html">Sample Project </a>
-        <a href="contact.html">Contact me </a>
+    </div>
+    <nav class="gap-x-4 flex text-base md:ml-auto border border-dashed" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="resume.html">Resume</a>
+        <a href="about.html">About me</a>
+        <a href="sample.html">Sample Project</a>
+        <a href="contact.html">Contact me</a>
     </nav>
 </header>
-<main class="flex flex-col items-center justify-start p-6 gap-6">
-    <h1 class="text-3xl font-semibold">My Resume!</h1>
 
-    <iframe src="./assets/docs/Turbat_Resume.pdf"
+<main class="flex flex-col items-center justify-start p-6 gap-6">
+    <h2 class="text-3xl font-semibold">My Resume!</h2>
+
+    <object
+            data="./assets/docs/Turbat_Resume.pdf"
+            type="application/pdf"
             class="w-full max-w-6xl border rounded shadow"
-            style="height: 80vh;"
-            type="application/pdf">
-        This browser does not support PDFs. Please download the file below.
-    </iframe>
+            style="height: 80vh;">
+        <p>This browser does not support PDFs. Please download the file below.</p>
+    </object>
 </main>
-<footer class="text-gray-400 bg-gray-800 body-font
-    w-full flex flex-col items-start justify-between p-6
-            mx-auto md:flex-row gap-2">
-    <a class="flex items-center mb-4 title-font md:mb-0 gap-2
-                  hover:text-white transition duration-500 ease-in-out">
-        <h1 class="text-sm">Turbat's Portfolio</h1>
-    </a>
-    <main class="flex flex-wrap text-sm pl-6 ml-6 border-l border-gray-400 grow ">
-        <article class="m-auto">
-            © Copyright 2025 Turbat Turkhuu, all rights reserved.
-        </article>
-    </main>
+
+<footer class="text-gray-400 bg-gray-800 body-font w-full flex flex-col items-start justify-between p-6 mx-auto md:flex-row gap-2">
+    <div class="flex items-center mb-4 title-font md:mb-0 gap-2 hover:text-white transition duration-500 ease-in-out">
+        <h2 class="text-sm">Turbat's Portfolio</h2>
+    </div>
+    <section class="flex flex-wrap text-sm pl-6 ml-6 border-l border-gray-400 grow">
+        <p class="m-auto">© Copyright 2025 Turbat Turkhuu, all rights reserved.</p>
+    </section>
 </footer>
+
 </body>
 </html>
