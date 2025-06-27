@@ -42,8 +42,6 @@ document.addEventListener("DOMContentLoaded", function () {
             e.preventDefault(); // Block form submission
         } else {
             alert("Form submitted successfully!");
-            // Optionally reset the form
-            // form.reset();
         }
     });
 });
