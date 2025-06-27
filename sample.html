@@ -3,17 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Sample Project</title>
+    <link rel="stylesheet" href="./assets/css/site.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-<header id="header"><img src="https://validator.w3.org/nu/#textarea" alt="">
-    Site Name
-    <i class="fa fa-bars hamburger-icon"></i>
+<header class="sticky top-0 flex flex-col justify-between p-6 mx-auto md:flex-row gap-2 bg-gray-800 text-gray-200">
+    <a class="flex items-center mb-4 title-font md:mb-0 gap-2">
+        <h1 class="text-sm">Turbat's Portfolio</h1>
+    </a>
+    <nav class="gap-x-4 flex text-base md:ml-auto border border-dashed">
+        <a href="index.html">Home </a>
+        <a href="projects.html">Projects </a>
+        <a href="resume.html">Resume </a>
+        <a href="about.html">About me </a>
+        <a href="sample.html">Sample Project </a>
+        <a href="contact.html">Contact me </a>
+    </nav>
 </header>
-<nav>
-    <a href="https://validator.w3.org/nu/#textarea">Home </a>
-    <a href="https://validator.w3.org/nu/#textarea">About </a>
-    <a href="https://validator.w3.org/nu/#textarea">Contact Us </a>
-</nav>
 
 <div class="content-wrapper">
     <main>
@@ -172,11 +178,18 @@
     </aside>
 </div>
 
-<footer>
-    All rights reserved &#xA9; 2025 Turbat.
-    <a href="https://validator.w3.org/nu/#textarea">Home <br></a>
-    <a href="https://validator.w3.org/nu/#textarea">About<br></a>
-    <a href="https://validator.w3.org/nu/#textarea">Contact Us<br></a>
+<footer class="text-gray-400 bg-gray-800 body-font
+    w-full flex flex-col items-start justify-between p-6
+            mx-auto md:flex-row gap-2">
+    <a class="flex items-center mb-4 title-font md:mb-0 gap-2
+                  hover:text-white transition duration-500 ease-in-out">
+        <h1 class="text-sm">Turbat's Portfolio</h1>
+    </a>
+    <div class="flex flex-wrap text-sm pl-6 ml-6 border-l border-gray-400 grow ">
+        <section class="m-auto">
+            © Copyright 2025 Turbat Turkhuu, all rights reserved.
+        </section>
+    </div>
 </footer>
 <script src="assets/js/script.js"></script>
 </body>

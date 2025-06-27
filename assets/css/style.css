@@ -9,26 +9,11 @@
 }
 
 /**General*/
-header, footer {
-    background-color: gray;
-    text-align: center;
-    border: solid 0.1em black;
-    padding: 1rem 1rem;
-}
-
 main, aside {
     background-color: gray;
     padding: 1rem;
     border: solid 0.1em black;
 }
-
-nav{
-    background-color: gray;
-    width: 100%;
-    border: solid 0.1em black;
-    padding: 1rem 1rem;
-}
-
 /**Articles*/
 .articles{
     display: grid;
@@ -44,9 +29,6 @@ article {
 
 /**Mobile*/
 @media screen and (min-width: 290px) {
-    nav{
-        display: none;
-    }
     aside{
         display: none;
     }
@@ -62,18 +44,6 @@ article {
     }
     .articles{
         grid-template-columns: 1fr;
-    }
-    header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 1;
-    }
-    footer {
-        position: fixed;
-        bottom: 0;
-        width: 100%;
     }
     .hamburger-icon {
         position: fixed;
@@ -145,7 +115,6 @@ article {
         flex-direction: column;
     }
     section{
-        background-color: gray;
         text-align: left;
         padding-top: 1em;
     }
@@ -154,26 +123,6 @@ article {
         font-weight: normal;
         background-color: gray;
         text-align: left;
-    }
-    header {
-        position: fixed;
-        z-index: 1;
-        height: 3em;
-        width: 100%;
-    }
-    nav{
-        display: flex;
-        position: fixed;
-        z-index: 0;
-        height: 3em;
-        width: 100%;
-        top: 2.8em;
-    }
-    footer {
-        position: fixed;
-        z-index: 1;
-        height: 5.5em;
-        width: 100%;
     }
     main{
         width: 100%;
