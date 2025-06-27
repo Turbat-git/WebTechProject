@@ -23,3 +23,12 @@ Welcome to my personal developer portfolio! This site showcases my projects, ski
 - **Responsive Design Principles**
 
 ---
+
+## Colors used
+
+| Name       | RGB           | HEX     |
+|------------|---------------|---------|
+| black      | 0, 0, 0       | #000000 |
+| white      | 255, 255, 255 | #FFFFFF |
+| ebony clay | 31, 41, 55    | #1f2937 |
+---
