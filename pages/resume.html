@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <title>Resume</title>
-    <link rel="stylesheet" href="./assets/css/site.css" />
+    <link rel="stylesheet" href="../assets/css/site.css" />
 </head>
 <body>
 
@@ -12,7 +12,7 @@
         <h1 class="text-sm">Turbat's Portfolio</h1>
     </div>
     <nav class="gap-x-4 flex text-base md:ml-auto border border-dashed" aria-label="Main navigation">
-        <a href="index.html">Home</a>
+        <a href="../index.html">Home</a>
         <a href="projects.html">Projects</a>
         <a href="resume.html">Resume</a>
         <a href="about.html">About me</a>
@@ -21,17 +21,23 @@
     </nav>
 </header>
 
-<main class="flex flex-col items-center justify-start p-6 gap-6">
-    <h2 class="text-3xl font-semibold">My Resume!</h2>
+<main class="flex flex-col items-center justify-start p-4 gap-6">
+    <h2 class="text-2xl sm:text-3xl font-semibold text-center">My Resume!</h2>
 
     <object
-            data="./assets/docs/Turbat_Resume.pdf"
+            data="../assets/docs/Turbat_Resume.pdf"
             type="application/pdf"
-            class="w-full max-w-6xl border rounded shadow"
-            style="height: 80vh;">
-        <p>This browser does not support PDFs. Please download the file below.</p>
+            class="w-full max-w-4xl border rounded shadow"
+            style="height: 75vh;">
+        <p>This browser does not support PDF viewing. You can download the resume below.</p>
     </object>
+
+    <a href="../assets/docs/Turbat_Resume.pdf" download
+       class="bg-sky-500 hover:bg-sky-600 text-white font-semibold py-2 px-6 rounded-full transition duration-300">
+        Download
+    </a>
 </main>
+
 
 <footer class="text-gray-400 bg-gray-800 body-font w-full flex flex-col items-start justify-between p-6 mx-auto md:flex-row gap-2">
     <div class="flex items-center mb-4 title-font md:mb-0 gap-2 hover:text-white transition duration-500 ease-in-out">
