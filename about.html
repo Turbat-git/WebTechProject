@@ -1,60 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>About</title>
-    <link rel="stylesheet" href="./assets/css/site.css">
+    <link rel="stylesheet" href="./assets/css/site.css" />
 </head>
 <body>
 <header class="sticky top-0 flex flex-col justify-between p-6 mx-auto md:flex-row gap-2 bg-gray-800 text-gray-200">
-    <a class="flex items-center mb-4 title-font md:mb-0 gap-2">
+    <div class="flex items-center mb-4 title-font md:mb-0 gap-2">
         <h1 class="text-sm">Turbat's Portfolio</h1>
-    </a>
-    <nav class="gap-x-4 flex text-base md:ml-auto border border-dashed">
-        <a href="index.html">Home </a>
-        <a href="projects.html">Projects </a>
-        <a href="resume.html">Resume </a>
-        <a href="about.html">About me </a>
-        <a href="sample.html">Sample Project </a>
-        <a href="contact.html">Contact me </a>
+    </div>
+    <nav class="gap-x-4 flex text-base md:ml-auto border border-dashed" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="resume.html">Resume</a>
+        <a href="about.html">About me</a>
+        <a href="sample.html">Sample Project</a>
+        <a href="contact.html">Contact me</a>
     </nav>
 </header>
+
 <main>
-    <article class="border border-gray-500 flex flex-col gap-4 p-4">
+    <section class="border border-gray-500 flex flex-col gap-4 p-4" aria-labelledby="whoami-title">
         <header class="bg-gray-800 text-gray-200 p-4 -m-4 mb-0">
-            <h4 class="text-bold text-xl">Who am I?</h4>
+            <h2 id="whoami-title" class="text-bold text-xl">Who am I?</h2>
         </header>
-        <main class="flex flex-col gap-4">
-            <article>My name is Turbat and I currently study Certificate IV in Programming at North Metro TAFE.
-            </article>
-        </main>
-    </article>
-    <article class="border border-gray-500 flex flex-col gap-4 p-4">
+        <p>My name is Turbat and I currently study Certificate IV in Programming at North Metro TAFE.</p>
+    </section>
+
+    <section class="border border-gray-500 flex flex-col gap-4 p-4" aria-labelledby="codingstory-title">
         <header class="bg-gray-800 text-gray-200 p-4 -m-4 mb-0">
-            <h4 class="text-bold text-xl">Coding Story</h4>
+            <h2 id="codingstory-title" class="text-bold text-xl">Coding Story</h2>
         </header>
-        <main class="flex flex-col gap-4">
-            <article>I first got introduced into coding when I was 15 and exploring career options for my future.
-            </article>
-            <article>And I remember feeling overwhelmed by the amount of choices I had and one day I had the
-                opportunity to visit a programmer workshop, where a lot of people from the industry showed us their
-                work and gave a talk</article>
-            <article>From that point onwards, my interest in coding snowballed. And here I am :)</article>
-        </main>
-    </article>
+        <p>I first got introduced into coding when I was 15 and exploring career options for my future.</p>
+        <p>And I remember feeling overwhelmed by the amount of choices I had and one day I had the opportunity to visit a programmer workshop, where a lot of people from the industry showed us their work and gave a talk.</p>
+        <p>From that point onwards, my interest in coding snowballed. And here I am :)</p>
+    </section>
 </main>
-<footer class="text-gray-400 bg-gray-800 body-font
-    w-full flex flex-col items-start justify-between p-6
-            mx-auto md:flex-row gap-2">
-    <a class="flex items-center mb-4 title-font md:mb-0 gap-2
-                  hover:text-white transition duration-500 ease-in-out">
-        <h1 class="text-sm">Turbat's Portfolio</h1>
-    </a>
-    <main class="flex flex-wrap text-sm pl-6 ml-6 border-l border-gray-400 grow ">
-        <article class="m-auto">
-            © Copyright 2025 Turbat Turkhuu, all rights reserved.
-        </article>
-    </main>
+
+<footer class="text-gray-400 bg-gray-800 body-font w-full flex flex-col items-start justify-between p-6 mx-auto md:flex-row gap-2">
+    <div class="flex items-center mb-4 title-font md:mb-0 gap-2 hover:text-white transition duration-500 ease-in-out">
+        <h2 class="text-sm">Turbat's Portfolio</h2>
+    </div>
+    <section class="flex flex-wrap text-sm pl-6 ml-6 border-l border-gray-400 grow">
+        <p class="m-auto">© Copyright 2025 Turbat Turkhuu, all rights reserved.</p>
+    </section>
 </footer>
 </body>
 </html>
