@@ -8,22 +8,22 @@
 </head>
 <body class="bg-white text-gray-900">
 
-<header class="sticky top-0 flex flex-col md:flex-row justify-between items-center p-4 bg-gray-800 text-gray-200">
-    <div class="flex items-center mb-4 md:mb-0 gap-2">
-        <h1 class="text-sm font-semibold">Turbat's Portfolio</h1>
+<header class="sticky top-0 flex flex-col justify-between p-6 mx-auto md:flex-row gap-2 bg-gray-800 text-gray-200">
+    <div class="flex items-center mb-4 title-font md:mb-0 gap-2">
+        <h1 class="text-sm">Turbat's Portfolio</h1>
     </div>
-    <nav class="flex flex-wrap justify-center md:justify-end gap-4 border border-dashed p-2 text-base" aria-label="Main navigation">
-        <a href="../index.html" class="hover:underline">Home</a>
-        <a href="projects.html" class="hover:underline">Projects</a>
-        <a href="resume.html" class="hover:underline">Resume</a>
-        <a href="about.html" class="hover:underline">About me</a>
-        <a href="sample.html" class="hover:underline">Sample Project</a>
-        <a href="contact.html" class="hover:underline">Contact me</a>
+    <nav class="gap-x-4 flex text-base md:ml-auto border border-dashed" aria-label="Main Navigation">
+        <a href="../index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="resume.html">Resume</a>
+        <a href="about.html">About me</a>
+        <a href="sample.html">Sample Project</a>
+        <a href="contact.html">Contact me</a>
     </nav>
 </header>
 
-<main class="flex flex-col items-center justify-start p-4 gap-6">
-    <h1 class="text-2xl sm:text-3xl font-semibold text-center">Contact Me</h1>
+<main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
+    <h1 class="text-2xl sm:text-3xl font-semibold text-center">Contact Me!</h1>
 
     <form id="contactForm"
           action="https://formsubmit.co/tturbat12.12@gmail.com"
@@ -31,7 +31,6 @@
           class="w-full max-w-md bg-white p-4 sm:p-6 rounded-lg shadow-md flex flex-col gap-4"
           novalidate>
         <fieldset class="flex flex-col gap-4">
-            <legend class="sr-only">Contact form fields</legend>
 
             <label for="name" class="flex flex-col gap-1">
                 <span class="text-sm font-medium">Name</span>
