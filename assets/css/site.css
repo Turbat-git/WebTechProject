@@ -554,6 +554,14 @@ video {
   display: none;
 }
 
+.hidden{
+  display: none;
+}
+
+.text-red-600{
+  color: #dc3545;
+}
+
 .container {
   width: 100%;
 }
